@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %} 
+<div class="mt-5">
+ <div class="text-center">
+  <img src="{% static 'core/images/ramest.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="120px">
+ </div>
+ <div class="mt-5 text-white mx-5 text-justify">
+  <h1 class="font-weight-bold st-font">Hello,</h1>
+  <div class="px-4" style="line-height:2rem;">
+   <p style="text-indent:100px;"> I am <b class="text-warning">Ramest Gupta</b> currently persuing my B.Tech from Ajay Kumar Garg Enginnering College, an Aspired full-stack developer with a strong foundation in Django, React, Node.js, and Machine Learning. I have served as a django developer at <b class="text-warning">Softpro India Company</b>, works on real life projects. I am passionate about building scalable web applications and continuously learning modern technologies to create efficient, user-friendly solutions. Skilled in both front-end and back-end development, I am eager to contribute to innovative projects that solve real-world challenges. </p>
+  </div>
+ </div>
+ <div class="text-center">
+  <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+ </div>
+</div>
+{% endblock content %}
